@@ -10,14 +10,19 @@ a, b = 3, 4
 # Strings
 myString = "This is a string."
 
+# Tests
 if isinstance(myFloat, float):
     print ("myFloat is a float-type.")
 
 if isinstance(myInt, int):
     print ("myInt is an integer.")
 
-print ("Floats: %f, " % myFloat, float(myInt)) 
+if myString == "This is a string.":
+    print("myString = '%s', and is therefore a string." % myString)
 
-print ("Integers: ", myInt, int(myFloat), a, b)
+# Output
+print ("Floats: %.2f" % myFloat, float(myInt)) # With a formatting string.
 
-print ("Strings: ", myString)
+print ("Integers:", myInt, int(myFloat), a, b)
+
+print ("Strings:", myString)
